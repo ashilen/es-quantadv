@@ -31,10 +31,11 @@
     },
     encoder: {
       type: 'lstm',
-      input_size: 50,
+      input_size: 100,
       hidden_size: 25,
       bidirectional: true
-    }
+    },
+    containment_feature_dim: 50
   },
   trainer: {
     num_epochs: 40,

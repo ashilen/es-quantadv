@@ -7,7 +7,9 @@ from allennlp.data import (
 )
 
 from allennlp.data.tokenizers import Token
-from allennlp.data.fields import IndexField, TextField, LabelField
+from allennlp.data.fields import (
+    SpanField, TextField, LabelField, ListField
+)
 from allennlp.data.token_indexers import SingleIdTokenIndexer, TokenIndexer
 
 
@@ -19,7 +21,9 @@ class Reader(DatasetReader):
         **kwargs
     ):
         super().__init__(**kwargs)
-        self.token_indexers = {'tokens': SingleIdTokenIndexer()}
+        self.token_indexers = {
+            'tokens': SingleIdTokenIndexer(),
+        }
 
     def _read(self, file_path: str) -> Iterable[Instance]:
 
@@ -31,19 +35,22 @@ class Reader(DatasetReader):
 
                 # hold out the quantifier from the tokens
                 tokens = [
-                    Token(token)  # if token is not quantifier else Token("")
+                    Token(token) if token is not quantifier else Token("")
                     for token in line["tokens"].split()]
 
                 tokens_field = TextField(tokens, self.token_indexers)
 
-                pred_1_field = IndexField(line["pred_1_idx"], tokens_field)
-                pred_2_field = IndexField(line["pred_2_idx"], tokens_field)
+                pred_1_field = SpanField(
+                    line["pred_1_idx"], line["pred_1_idx"], tokens_field)
+                pred_2_field = SpanField(
+                    line["pred_2_idx"], line["pred_2_idx"], tokens_field)
+
+                predicate_sequence_field = ListField(
+                    [pred_1_field, pred_2_field])
 
                 containment_field = LabelField(
                     str(line["containment"]),
-                    # label_namespace="labels",
-                    skip_indexing=True
-                )
+                    label_namespace="containment_labels")
 
                 label_field = LabelField(quantifier)
 
@@ -51,8 +58,7 @@ class Reader(DatasetReader):
                     "tokens": tokens_field,
                     "label": label_field,
                     "containment": containment_field,
-                    "pred_1": pred_1_field,
-                    "pred_2": pred_2_field
+                    "predicates": predicate_sequence_field
                 }
 
                 yield Instance(fields)

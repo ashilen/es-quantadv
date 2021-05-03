@@ -9,7 +9,8 @@ from allennlp.data import (
 )
 from allennlp.nn import util
 from allennlp.models import Model
-from allennlp.modules.seq2vec_encoders import Seq2VecEncoder
+from allennlp.modules import Seq2VecEncoder, FeedForward, Embedding
+from allennlp.modules.span_extractors import EndpointSpanExtractor
 from allennlp.training.metrics import CategoricalAccuracy, F1Measure
 from allennlp.modules.text_field_embedders import TextFieldEmbedder
 
@@ -19,6 +20,7 @@ class SimpleClassifierModel(Model):
     def __init__(self,
                  vocab: Vocabulary,
                  embedder: TextFieldEmbedder,
+                 containment_feature_dim: int,
                  encoder: Seq2VecEncoder):
         super().__init__(vocab)
         self.embedder = embedder
@@ -27,8 +29,15 @@ class SimpleClassifierModel(Model):
         print(self.num_labels)
         self.classifier = torch.nn.Linear(
             encoder.get_output_dim(), self.num_labels)
-        self.label_accuracy = CategoricalAccuracy()
 
+        print("=====>", vocab.get_vocab_size("tokens"))
+        num_containment_labels = vocab.get_vocab_size("containment_labels")
+        self.containment_embedding = Embedding(
+            num_containment_labels, num_containment_labels)
+
+        self.span_extractor = EndpointSpanExtractor(input_dim=50, combination="x,y")
+
+        self.label_accuracy = CategoricalAccuracy()
         self.label_f1_metrics = {}
         for i in range(self.num_labels):
             f1 = F1Measure(positive_label=i)
@@ -37,23 +46,30 @@ class SimpleClassifierModel(Model):
 
     def forward(self,
                 tokens: TextFieldTensors,
-                pred_1: torch.LongTensor,
-                pred_2: torch.LongTensor,
+                predicates: torch.LongTensor,
                 containment: torch.LongTensor,
                 label: torch.Tensor) -> Dict[str, torch.Tensor]:
 
         # Shape: (batch_size, num_tokens, embedding_dim)
         embedded_text = self.embedder(tokens)
+
         # Shape: (batch_size, num_tokens)
-        mask = util.get_text_field_mask(tokens)
+        # mask = util.get_text_field_mask(tokens)
+
+        # Shape: (batch_size, num_tokens, embedding_dim)
+        embedded_predicates = self.span_extractor(embedded_text, predicates)
+
+        predicates_mask = (predicates[:, :, 0] >= 0).squeeze(-1)
+
         # Shape: (batch_size, encoding_dim)
-        encoded_text = self.encoder(embedded_text, mask)
+        encoded_predicates = self.encoder(embedded_predicates, predicates_mask)
         # Shape: (batch_size, num_labels)
-        logits = self.classifier(encoded_text)
+        logits = self.classifier(encoded_predicates)
         # Shape: (batch_size, num_labels)
         probs = torch.nn.functional.softmax(logits)
         # Shape: (1,)
         loss = torch.nn.functional.cross_entropy(logits, label)
+
         self.label_accuracy(logits, label)
 
         # compute F1 per label

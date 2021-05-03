@@ -52,6 +52,8 @@ QUANTIFIERS = [
 
     # "all the time",  # not gonna work!
 
+    # "a lot",      # make work plz
+
     "often",
     "frequently",
     "commonly",
@@ -138,7 +140,8 @@ class Predicate:
 
     @property
     def idx(self):
-        return int(self.id.split("-")[-1])
+        # 0 -> 1 indexing
+        return int(self.id.split("-")[-1]) - 1
 
     @property
     def sentence(self):
@@ -353,7 +356,7 @@ class Corpus:
         return [pp for pp in self if pp.split == split]
 
     def format_training_data(self):
-        for split in [DEV, TRAIN, TEST]:
+        for split in [TRAIN, DEV, TEST]:
             file = os.path.join(DATA_DIR, split)
 
             with open(file, "w+") as f:
