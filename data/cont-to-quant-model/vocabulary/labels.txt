@@ -1,0 +1,14 @@
+0
+never
+always
+usually
+often
+sometimes
+whenever
+mostly
+frequently
+generally
+rarely
+occasionally
+seldom
+universally

@@ -10,8 +10,7 @@
         }
     },
     "model": {
-        "type": "simple_classifier",
-        "containment_feature_dim": 50,
+        "type": "containment_to_quant_classifier",
         "embedder": {
             "token_embedders": {
                 "tokens": {
@@ -26,7 +25,7 @@
             "type": "lstm",
             "bidirectional": true,
             "hidden_size": 25,
-            "input_size": 100
+            "input_size": 200
         }
     },
     "train_data_path": "data/train",

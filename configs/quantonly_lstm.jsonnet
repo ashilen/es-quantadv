@@ -15,10 +15,11 @@
       batch_size: 10
     }
   },
-  train_data_path: 'data/train',
-  validation_data_path: 'data/dev',
+  train_data_path: 'data/quantonly/train',
+  validation_data_path: 'data/quantonly/dev',
+  test_data_path: 'data/quantonly/test',
   model: {
-    type: 'simple_classifier',
+    type: 'containment_to_quant_classifier',
     embedder: {
       token_embedders: {
         tokens: {
@@ -31,11 +32,10 @@
     },
     encoder: {
       type: 'lstm',
-      input_size: 100,
+      input_size: 200,
       hidden_size: 25,
       bidirectional: true
-    },
-    containment_feature_dim: 50
+    }
   },
   trainer: {
     num_epochs: 40,

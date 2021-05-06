@@ -1,0 +1,864 @@
+2021-05-03 17:16:07,998 - INFO - allennlp.common.params - random_seed = 13370
+2021-05-03 17:16:07,998 - INFO - allennlp.common.params - numpy_seed = 1337
+2021-05-03 17:16:07,998 - INFO - allennlp.common.params - pytorch_seed = 133
+2021-05-03 17:16:07,999 - INFO - allennlp.common.checks - Pytorch version: 1.8.1
+2021-05-03 17:16:08,000 - INFO - allennlp.common.params - type = default
+2021-05-03 17:16:08,000 - INFO - allennlp.common.params - dataset_reader.type = uds_time_reader
+2021-05-03 17:16:08,001 - INFO - allennlp.common.params - dataset_reader.max_instances = None
+2021-05-03 17:16:08,001 - INFO - allennlp.common.params - dataset_reader.manual_distributed_sharding = False
+2021-05-03 17:16:08,001 - INFO - allennlp.common.params - dataset_reader.manual_multiprocess_sharding = False
+2021-05-03 17:16:08,001 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.type = single_id
+2021-05-03 17:16:08,001 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.namespace = tokens
+2021-05-03 17:16:08,002 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.lowercase_tokens = True
+2021-05-03 17:16:08,002 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.start_tokens = None
+2021-05-03 17:16:08,002 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.end_tokens = None
+2021-05-03 17:16:08,002 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.feature_name = text
+2021-05-03 17:16:08,002 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.default_value = THIS IS A REALLY UNLIKELY VALUE THAT HAS TO BE A STRING
+2021-05-03 17:16:08,002 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.token_min_padding_length = 0
+2021-05-03 17:16:08,003 - INFO - allennlp.common.params - train_data_path = data/quantonly/train
+2021-05-03 17:16:08,003 - INFO - allennlp.common.params - vocabulary = <allennlp.common.lazy.Lazy object at 0x13e3221c0>
+2021-05-03 17:16:08,003 - INFO - allennlp.common.params - datasets_for_vocab_creation = None
+2021-05-03 17:16:08,003 - INFO - allennlp.common.params - validation_dataset_reader = None
+2021-05-03 17:16:08,003 - INFO - allennlp.common.params - validation_data_path = data/quantonly/dev
+2021-05-03 17:16:08,004 - INFO - allennlp.common.params - validation_data_loader = None
+2021-05-03 17:16:08,004 - INFO - allennlp.common.params - test_data_path = data/quantonly/test
+2021-05-03 17:16:08,004 - INFO - allennlp.common.params - evaluate_on_test = False
+2021-05-03 17:16:08,004 - INFO - allennlp.common.params - batch_weight_key = 
+2021-05-03 17:16:08,004 - INFO - allennlp.common.params - data_loader.type = multiprocess
+2021-05-03 17:16:08,005 - INFO - allennlp.common.params - data_loader.batch_size = None
+2021-05-03 17:16:08,005 - INFO - allennlp.common.params - data_loader.drop_last = False
+2021-05-03 17:16:08,005 - INFO - allennlp.common.params - data_loader.shuffle = False
+2021-05-03 17:16:08,005 - INFO - allennlp.common.params - data_loader.batch_sampler.type = bucket
+2021-05-03 17:16:08,005 - INFO - allennlp.common.params - data_loader.batch_sampler.batch_size = 10
+2021-05-03 17:16:08,006 - INFO - allennlp.common.params - data_loader.batch_sampler.sorting_keys = None
+2021-05-03 17:16:08,006 - INFO - allennlp.common.params - data_loader.batch_sampler.padding_noise = 0.1
+2021-05-03 17:16:08,006 - INFO - allennlp.common.params - data_loader.batch_sampler.drop_last = False
+2021-05-03 17:16:08,006 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2021-05-03 17:16:08,006 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2021-05-03 17:16:08,006 - INFO - allennlp.common.params - data_loader.max_instances_in_memory = None
+2021-05-03 17:16:08,006 - INFO - allennlp.common.params - data_loader.start_method = fork
+2021-05-03 17:16:08,006 - INFO - allennlp.common.params - data_loader.cuda_device = None
+2021-05-03 17:16:08,007 - INFO - allennlp.common.params - data_loader.quiet = False
+2021-05-03 17:16:08,014 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2021-05-03 17:16:08,208 - INFO - allennlp.common.params - data_loader.type = multiprocess
+2021-05-03 17:16:08,208 - INFO - allennlp.common.params - data_loader.batch_size = None
+2021-05-03 17:16:08,208 - INFO - allennlp.common.params - data_loader.drop_last = False
+2021-05-03 17:16:08,208 - INFO - allennlp.common.params - data_loader.shuffle = False
+2021-05-03 17:16:08,209 - INFO - allennlp.common.params - data_loader.batch_sampler.type = bucket
+2021-05-03 17:16:08,209 - INFO - allennlp.common.params - data_loader.batch_sampler.batch_size = 10
+2021-05-03 17:16:08,209 - INFO - allennlp.common.params - data_loader.batch_sampler.sorting_keys = None
+2021-05-03 17:16:08,209 - INFO - allennlp.common.params - data_loader.batch_sampler.padding_noise = 0.1
+2021-05-03 17:16:08,209 - INFO - allennlp.common.params - data_loader.batch_sampler.drop_last = False
+2021-05-03 17:16:08,209 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2021-05-03 17:16:08,209 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2021-05-03 17:16:08,209 - INFO - allennlp.common.params - data_loader.max_instances_in_memory = None
+2021-05-03 17:16:08,210 - INFO - allennlp.common.params - data_loader.start_method = fork
+2021-05-03 17:16:08,210 - INFO - allennlp.common.params - data_loader.cuda_device = None
+2021-05-03 17:16:08,210 - INFO - allennlp.common.params - data_loader.quiet = False
+2021-05-03 17:16:08,210 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2021-05-03 17:16:08,216 - INFO - allennlp.common.params - data_loader.type = multiprocess
+2021-05-03 17:16:08,216 - INFO - allennlp.common.params - data_loader.batch_size = None
+2021-05-03 17:16:08,217 - INFO - allennlp.common.params - data_loader.drop_last = False
+2021-05-03 17:16:08,217 - INFO - allennlp.common.params - data_loader.shuffle = False
+2021-05-03 17:16:08,217 - INFO - allennlp.common.params - data_loader.batch_sampler.type = bucket
+2021-05-03 17:16:08,217 - INFO - allennlp.common.params - data_loader.batch_sampler.batch_size = 10
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.batch_sampler.sorting_keys = None
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.batch_sampler.padding_noise = 0.1
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.batch_sampler.drop_last = False
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.max_instances_in_memory = None
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.start_method = fork
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.cuda_device = None
+2021-05-03 17:16:08,218 - INFO - allennlp.common.params - data_loader.quiet = False
+2021-05-03 17:16:08,219 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2021-05-03 17:16:08,226 - INFO - allennlp.common.params - type = from_instances
+2021-05-03 17:16:08,226 - INFO - allennlp.common.params - min_count = None
+2021-05-03 17:16:08,227 - INFO - allennlp.common.params - max_vocab_size = None
+2021-05-03 17:16:08,227 - INFO - allennlp.common.params - non_padded_namespaces = ('*tags', '*labels')
+2021-05-03 17:16:08,227 - INFO - allennlp.common.params - pretrained_files = None
+2021-05-03 17:16:08,227 - INFO - allennlp.common.params - only_include_pretrained_words = False
+2021-05-03 17:16:08,234 - INFO - allennlp.common.params - tokens_to_add = None
+2021-05-03 17:16:08,234 - INFO - allennlp.common.params - min_pretrained_embeddings = None
+2021-05-03 17:16:08,234 - INFO - allennlp.common.params - padding_token = @@PADDING@@
+2021-05-03 17:16:08,235 - INFO - allennlp.common.params - oov_token = @@UNKNOWN@@
+2021-05-03 17:16:08,235 - INFO - allennlp.data.vocabulary - Fitting token dictionary from dataset.
+2021-05-03 17:16:08,235 - INFO - tqdm - building vocab: 0it [00:00, ?it/s]
+2021-05-03 17:16:08,288 - INFO - allennlp.common.params - model.type = simple_classifier
+2021-05-03 17:16:08,288 - INFO - allennlp.common.params - model.embedder.type = basic
+2021-05-03 17:16:08,289 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.type = embedding
+2021-05-03 17:16:08,289 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.embedding_dim = 50
+2021-05-03 17:16:08,289 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.num_embeddings = None
+2021-05-03 17:16:08,289 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.projection_dim = None
+2021-05-03 17:16:08,289 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.weight = None
+2021-05-03 17:16:08,289 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.padding_index = None
+2021-05-03 17:16:08,289 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.trainable = False
+2021-05-03 17:16:08,290 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.max_norm = None
+2021-05-03 17:16:08,290 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.norm_type = 2.0
+2021-05-03 17:16:08,290 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.scale_grad_by_freq = False
+2021-05-03 17:16:08,290 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.sparse = False
+2021-05-03 17:16:08,290 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.vocab_namespace = tokens
+2021-05-03 17:16:08,300 - INFO - allennlp.common.params - model.embedder.token_embedders.tokens.pretrained_file = (http://nlp.stanford.edu/data/glove.6B.zip)#glove.6B.50d.txt
+2021-05-03 17:16:08,301 - INFO - allennlp.modules.token_embedders.embedding - Reading pretrained embeddings from file
+2021-05-03 17:16:09,068 - INFO - allennlp.common.file_utils - cache of http://nlp.stanford.edu/data/glove.6B.zip is up-to-date
+2021-05-03 17:16:09,815 - INFO - allennlp.common.file_utils - cache of http://nlp.stanford.edu/data/glove.6B.zip is up-to-date
+2021-05-03 17:16:09,818 - INFO - tqdm - 0it [00:00, ?it/s]
+2021-05-03 17:16:11,518 - INFO - allennlp.modules.token_embedders.embedding - Initializing pre-trained embedding layer
+2021-05-03 17:16:11,544 - INFO - allennlp.modules.token_embedders.embedding - Pretrained embeddings were found for 3063 out of 4030 tokens
+2021-05-03 17:16:11,545 - INFO - allennlp.common.params - model.encoder.type = lstm
+2021-05-03 17:16:11,546 - INFO - allennlp.common.params - model.encoder.input_size = 200
+2021-05-03 17:16:11,546 - INFO - allennlp.common.params - model.encoder.hidden_size = 25
+2021-05-03 17:16:11,546 - INFO - allennlp.common.params - model.encoder.num_layers = 1
+2021-05-03 17:16:11,546 - INFO - allennlp.common.params - model.encoder.bias = True
+2021-05-03 17:16:11,546 - INFO - allennlp.common.params - model.encoder.dropout = 0.0
+2021-05-03 17:16:11,546 - INFO - allennlp.common.params - model.encoder.bidirectional = True
+2021-05-03 17:16:11,547 - INFO - allennlp.common.params - model.containment_embedding = <class 'allennlp.modules.token_embedders.embedding.Embedding'>
+2021-05-03 17:16:11,624 - INFO - allennlp.common.params - trainer.type = gradient_descent
+2021-05-03 17:16:11,624 - INFO - allennlp.common.params - trainer.patience = 10
+2021-05-03 17:16:11,624 - INFO - allennlp.common.params - trainer.validation_metric = -loss
+2021-05-03 17:16:11,624 - INFO - allennlp.common.params - trainer.num_epochs = 40
+2021-05-03 17:16:11,624 - INFO - allennlp.common.params - trainer.cuda_device = -1
+2021-05-03 17:16:11,625 - INFO - allennlp.common.params - trainer.grad_norm = None
+2021-05-03 17:16:11,625 - INFO - allennlp.common.params - trainer.grad_clipping = 5
+2021-05-03 17:16:11,625 - INFO - allennlp.common.params - trainer.distributed = False
+2021-05-03 17:16:11,625 - INFO - allennlp.common.params - trainer.world_size = 1
+2021-05-03 17:16:11,625 - INFO - allennlp.common.params - trainer.num_gradient_accumulation_steps = 1
+2021-05-03 17:16:11,625 - INFO - allennlp.common.params - trainer.use_amp = False
+2021-05-03 17:16:11,626 - INFO - allennlp.common.params - trainer.no_grad = None
+2021-05-03 17:16:11,626 - INFO - allennlp.common.params - trainer.learning_rate_scheduler = None
+2021-05-03 17:16:11,626 - INFO - allennlp.common.params - trainer.momentum_scheduler = None
+2021-05-03 17:16:11,626 - INFO - allennlp.common.params - trainer.moving_average = None
+2021-05-03 17:16:11,626 - INFO - allennlp.common.params - trainer.checkpointer = <allennlp.common.lazy.Lazy object at 0x13e3030a0>
+2021-05-03 17:16:11,626 - INFO - allennlp.common.params - trainer.callbacks = None
+2021-05-03 17:16:11,626 - INFO - allennlp.common.params - trainer.enable_default_callbacks = True
+2021-05-03 17:16:11,627 - INFO - allennlp.common.params - trainer.run_sanity_checks = True
+2021-05-03 17:16:11,627 - INFO - allennlp.common.params - trainer.optimizer.type = adam
+2021-05-03 17:16:11,627 - INFO - allennlp.common.params - trainer.optimizer.parameter_groups = None
+2021-05-03 17:16:11,627 - INFO - allennlp.common.params - trainer.optimizer.lr = 0.003
+2021-05-03 17:16:11,627 - INFO - allennlp.common.params - trainer.optimizer.betas = (0.9, 0.999)
+2021-05-03 17:16:11,627 - INFO - allennlp.common.params - trainer.optimizer.eps = 1e-08
+2021-05-03 17:16:11,627 - INFO - allennlp.common.params - trainer.optimizer.weight_decay = 0.0
+2021-05-03 17:16:11,627 - INFO - allennlp.common.params - trainer.optimizer.amsgrad = False
+2021-05-03 17:16:11,628 - INFO - allennlp.training.optimizers - Number of trainable parameters: 56061
+2021-05-03 17:16:11,628 - INFO - allennlp.common.util - The following parameters are Frozen (without gradient):
+2021-05-03 17:16:11,628 - INFO - allennlp.common.util - embedder.token_embedder_tokens.weight
+2021-05-03 17:16:11,628 - INFO - allennlp.common.util - The following parameters are Tunable (with gradient):
+2021-05-03 17:16:11,628 - INFO - allennlp.common.util - encoder._module.weight_ih_l0
+2021-05-03 17:16:11,628 - INFO - allennlp.common.util - encoder._module.weight_hh_l0
+2021-05-03 17:16:11,628 - INFO - allennlp.common.util - encoder._module.bias_ih_l0
+2021-05-03 17:16:11,628 - INFO - allennlp.common.util - encoder._module.bias_hh_l0
+2021-05-03 17:16:11,628 - INFO - allennlp.common.util - encoder._module.weight_ih_l0_reverse
+2021-05-03 17:16:11,629 - INFO - allennlp.common.util - encoder._module.weight_hh_l0_reverse
+2021-05-03 17:16:11,629 - INFO - allennlp.common.util - encoder._module.bias_ih_l0_reverse
+2021-05-03 17:16:11,629 - INFO - allennlp.common.util - encoder._module.bias_hh_l0_reverse
+2021-05-03 17:16:11,629 - INFO - allennlp.common.util - classifier.weight
+2021-05-03 17:16:11,629 - INFO - allennlp.common.util - classifier.bias
+2021-05-03 17:16:11,629 - INFO - allennlp.common.util - containment_embedding.weight
+2021-05-03 17:16:11,629 - INFO - allennlp.common.params - type = default
+2021-05-03 17:16:11,630 - INFO - allennlp.common.params - keep_serialized_model_every_num_seconds = None
+2021-05-03 17:16:11,630 - INFO - allennlp.common.params - num_serialized_models_to_keep = 2
+2021-05-03 17:16:11,630 - INFO - allennlp.common.params - model_save_interval = None
+2021-05-03 17:16:11,631 - INFO - allennlp.training.trainer - Beginning training.
+2021-05-03 17:16:11,631 - INFO - allennlp.training.trainer - Epoch 0/39
+2021-05-03 17:16:11,631 - INFO - allennlp.training.trainer - Worker 0 memory usage: 245M
+2021-05-03 17:16:11,631 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:11,631 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:11,632 - INFO - allennlp.data.samplers.bucket_batch_sampler - No sorting keys given; trying to guess a good one
+2021-05-03 17:16:11,633 - INFO - allennlp.data.samplers.bucket_batch_sampler - Using ['tokens'] as the sorting keys
+2021-05-03 17:16:12,658 - INFO - tqdm - never_P: 0.4195, never_R: 0.8042, never_F1: 0.5514, always_P: 0.3758, always_R: 0.2890, always_F1: 0.3267, usually_P: 0.0000, usually_R: 0.0000, usually_F1: 0.0000, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0798, accuracy: 0.3959, batch_loss: 1.6672, loss: 1.7189 ||: 100%|##########| 147/147 [00:01<00:00, 143.26it/s]
+2021-05-03 17:16:12,664 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:12,664 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:12,664 - INFO - allennlp.data.samplers.bucket_batch_sampler - No sorting keys given; trying to guess a good one
+2021-05-03 17:16:12,664 - INFO - allennlp.data.samplers.bucket_batch_sampler - Using ['tokens'] as the sorting keys
+2021-05-03 17:16:12,723 - INFO - tqdm - never_P: 0.2143, never_R: 0.6522, never_F1: 0.3226, always_P: 0.4324, always_R: 0.4000, always_F1: 0.4156, usually_P: 0.0000, usually_R: 0.0000, usually_F1: 0.0000, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0671, accuracy: 0.2897, batch_loss: 2.3036, loss: 1.8615 ||: 100%|##########| 11/11 [00:00<00:00, 187.74it/s]
+2021-05-03 17:16:12,727 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'data/quantonly-model/best.th'.
+2021-05-03 17:16:12,728 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:12,728 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.396  |     0.290
+2021-05-03 17:16:12,728 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.327  |     0.416
+2021-05-03 17:16:12,728 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.376  |     0.432
+2021-05-03 17:16:12,728 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.289  |     0.400
+2021-05-03 17:16:12,728 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.080  |     0.067
+2021-05-03 17:16:12,729 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.000  |     0.000
+2021-05-03 17:16:12,729 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     0.000  |     0.000
+2021-05-03 17:16:12,729 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.000  |     0.000
+2021-05-03 17:16:12,729 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.000  |     0.000
+2021-05-03 17:16:12,729 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     0.000  |     0.000
+2021-05-03 17:16:12,729 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.000  |     0.000
+2021-05-03 17:16:12,729 - INFO - allennlp.training.callbacks.console_logger - loss               |     1.719  |     1.861
+2021-05-03 17:16:12,745 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.000  |     0.000
+2021-05-03 17:16:12,745 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.000  |     0.000
+2021-05-03 17:16:12,745 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.000  |     0.000
+2021-05-03 17:16:12,745 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.551  |     0.323
+2021-05-03 17:16:12,746 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.420  |     0.214
+2021-05-03 17:16:12,746 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.804  |     0.652
+2021-05-03 17:16:12,746 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.000  |     0.000
+2021-05-03 17:16:12,746 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     0.000  |     0.000
+2021-05-03 17:16:12,746 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.000  |     0.000
+2021-05-03 17:16:12,746 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.000  |     0.000
+2021-05-03 17:16:12,746 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.000  |     0.000
+2021-05-03 17:16:12,746 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.000  |     0.000
+2021-05-03 17:16:12,747 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.000  |     0.000
+2021-05-03 17:16:12,747 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     0.000  |     0.000
+2021-05-03 17:16:12,747 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.000  |     0.000
+2021-05-03 17:16:12,747 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.000  |     0.000
+2021-05-03 17:16:12,747 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.000  |     0.000
+2021-05-03 17:16:12,747 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.000  |     0.000
+2021-05-03 17:16:12,747 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     0.000  |     0.000
+2021-05-03 17:16:12,748 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     0.000  |     0.000
+2021-05-03 17:16:12,748 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     0.000  |     0.000
+2021-05-03 17:16:12,748 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.000  |     0.000
+2021-05-03 17:16:12,748 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.000  |     0.000
+2021-05-03 17:16:12,748 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.000  |     0.000
+2021-05-03 17:16:12,748 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   245.137  |       N/A
+2021-05-03 17:16:12,748 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.117446
+2021-05-03 17:16:12,749 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:43
+2021-05-03 17:16:12,749 - INFO - allennlp.training.trainer - Epoch 1/39
+2021-05-03 17:16:12,749 - INFO - allennlp.training.trainer - Worker 0 memory usage: 255M
+2021-05-03 17:16:12,750 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:12,750 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:13,774 - INFO - tqdm - never_P: 0.5042, never_R: 0.8377, never_F1: 0.6296, always_P: 0.4693, always_R: 0.5175, always_F1: 0.4922, usually_P: 0.4000, usually_R: 0.0134, usually_F1: 0.0260, often_P: 0.6786, often_R: 0.1696, often_F1: 0.2714, sometimes_P: 0.7692, sometimes_R: 0.0952, sometimes_F1: 0.1695, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 1.0000, generally_R: 0.1250, generally_F1: 0.2222, occasionally_P: 1.0000, occasionally_R: 0.0769, occasionally_F1: 0.1429, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.1776, accuracy: 0.4997, batch_loss: 1.5258, loss: 1.4211 ||: 100%|##########| 147/147 [00:01<00:00, 143.67it/s]
+2021-05-03 17:16:13,777 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:13,777 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:13,836 - INFO - tqdm - never_P: 0.2000, never_R: 0.2609, never_F1: 0.2264, always_P: 0.3947, always_R: 0.7500, always_F1: 0.5172, usually_P: 0.0000, usually_R: 0.0000, usually_F1: 0.0000, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0676, accuracy: 0.3364, batch_loss: 1.6756, loss: 1.7743 ||: 100%|##########| 11/11 [00:00<00:00, 187.04it/s]
+2021-05-03 17:16:13,840 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'data/quantonly-model/best.th'.
+2021-05-03 17:16:13,841 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:13,841 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.500  |     0.336
+2021-05-03 17:16:13,841 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.492  |     0.517
+2021-05-03 17:16:13,841 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.469  |     0.395
+2021-05-03 17:16:13,841 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.517  |     0.750
+2021-05-03 17:16:13,841 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.178  |     0.068
+2021-05-03 17:16:13,841 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.000  |     0.000
+2021-05-03 17:16:13,842 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     0.000  |     0.000
+2021-05-03 17:16:13,842 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.000  |     0.000
+2021-05-03 17:16:13,842 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.222  |     0.000
+2021-05-03 17:16:13,842 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:13,842 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.125  |     0.000
+2021-05-03 17:16:13,842 - INFO - allennlp.training.callbacks.console_logger - loss               |     1.421  |     1.774
+2021-05-03 17:16:13,842 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.000  |     0.000
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.000  |     0.000
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.000  |     0.000
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.630  |     0.226
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.504  |     0.200
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.838  |     0.261
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.143  |     0.000
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.077  |     0.000
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.271  |     0.000
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.679  |     0.000
+2021-05-03 17:16:13,843 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.170  |     0.000
+2021-05-03 17:16:13,844 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.000  |     0.000
+2021-05-03 17:16:13,844 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     0.000  |     0.000
+2021-05-03 17:16:13,844 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.000  |     0.000
+2021-05-03 17:16:13,844 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.169  |     0.000
+2021-05-03 17:16:13,844 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.769  |     0.000
+2021-05-03 17:16:13,844 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.095  |     0.000
+2021-05-03 17:16:13,844 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     0.000  |     0.000
+2021-05-03 17:16:13,845 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     0.000  |     0.000
+2021-05-03 17:16:13,845 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     0.000  |     0.000
+2021-05-03 17:16:13,845 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.026  |     0.000
+2021-05-03 17:16:13,845 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.400  |     0.000
+2021-05-03 17:16:13,845 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.013  |     0.000
+2021-05-03 17:16:13,845 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.422  |       N/A
+2021-05-03 17:16:13,845 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.096378
+2021-05-03 17:16:13,845 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:42
+2021-05-03 17:16:13,846 - INFO - allennlp.training.trainer - Epoch 2/39
+2021-05-03 17:16:13,846 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:13,846 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:13,846 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:14,885 - INFO - tqdm - never_P: 0.5968, never_R: 0.8483, never_F1: 0.7007, always_P: 0.5354, always_R: 0.6177, always_F1: 0.5736, usually_P: 0.4651, usually_R: 0.1342, usually_F1: 0.2083, often_P: 0.6491, often_R: 0.3304, often_F1: 0.4379, sometimes_P: 0.6000, sometimes_R: 0.2571, sometimes_F1: 0.3600, mostly_P: 0.8750, mostly_R: 0.1892, mostly_F1: 0.3111, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 1.0000, generally_R: 0.1250, generally_F1: 0.2222, occasionally_P: 1.0000, occasionally_R: 0.2308, occasionally_F1: 0.3750, seldom_P: 1.0000, seldom_R: 0.1111, seldom_F1: 0.2000, universally_P: 1.0000, universally_R: 0.6667, universally_F1: 0.8000, average_F1: 0.3808, accuracy: 0.5788, batch_loss: 0.9283, loss: 1.1936 ||: 100%|##########| 147/147 [00:01<00:00, 141.62it/s]
+2021-05-03 17:16:14,889 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:14,889 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:14,958 - INFO - tqdm - never_P: 0.1842, never_R: 0.3043, never_F1: 0.2295, always_P: 0.4364, always_R: 0.6000, always_F1: 0.5053, usually_P: 0.6000, usually_R: 0.1250, usually_F1: 0.2069, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.1667, sometimes_R: 0.2000, sometimes_F1: 0.1818, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.1021, accuracy: 0.3271, batch_loss: 2.3723, loss: 1.9426 ||: 100%|##########| 11/11 [00:00<00:00, 160.17it/s]
+2021-05-03 17:16:14,963 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:14,963 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.579  |     0.327
+2021-05-03 17:16:14,963 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.574  |     0.505
+2021-05-03 17:16:14,963 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.535  |     0.436
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.618  |     0.600
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.381  |     0.102
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.000  |     0.000
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     0.000  |     0.000
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.000  |     0.000
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.222  |     0.000
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.125  |     0.000
+2021-05-03 17:16:14,964 - INFO - allennlp.training.callbacks.console_logger - loss               |     1.194  |     1.943
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.311  |     0.000
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.875  |     0.000
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.189  |     0.000
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.701  |     0.230
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.597  |     0.184
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.848  |     0.304
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.375  |     0.000
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:14,965 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.231  |     0.000
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.438  |     0.000
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.649  |     0.000
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.330  |     0.000
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.200  |     0.000
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.111  |     0.000
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.360  |     0.182
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.600  |     0.167
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.257  |     0.200
+2021-05-03 17:16:14,966 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     0.800  |     0.000
+2021-05-03 17:16:14,967 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:14,967 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     0.667  |     0.000
+2021-05-03 17:16:14,967 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.208  |     0.207
+2021-05-03 17:16:14,967 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.465  |     0.600
+2021-05-03 17:16:14,967 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.134  |     0.125
+2021-05-03 17:16:14,967 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.633  |       N/A
+2021-05-03 17:16:14,967 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.121610
+2021-05-03 17:16:14,967 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:41
+2021-05-03 17:16:14,967 - INFO - allennlp.training.trainer - Epoch 3/39
+2021-05-03 17:16:14,968 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:14,968 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:14,968 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:16,079 - INFO - tqdm - never_P: 0.6927, never_R: 0.8589, never_F1: 0.7669, always_P: 0.6291, always_R: 0.7156, always_F1: 0.6696, usually_P: 0.6806, usually_R: 0.3289, usually_F1: 0.4434, often_P: 0.7500, often_R: 0.5893, often_F1: 0.6600, sometimes_P: 0.6575, sometimes_R: 0.4571, sometimes_F1: 0.5393, mostly_P: 0.9286, mostly_R: 0.3514, mostly_F1: 0.5098, frequently_P: 1.0000, frequently_R: 0.2143, frequently_F1: 0.3529, generally_P: 1.0000, generally_R: 0.3333, generally_F1: 0.5000, occasionally_P: 1.0000, occasionally_R: 0.4615, occasionally_F1: 0.6316, seldom_P: 1.0000, seldom_R: 0.5556, seldom_F1: 0.7143, universally_P: 1.0000, universally_R: 0.8333, universally_F1: 0.9091, average_F1: 0.6088, accuracy: 0.6805, batch_loss: 0.7021, loss: 0.9509 ||: 100%|##########| 147/147 [00:01<00:00, 132.30it/s]
+2021-05-03 17:16:16,083 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:16,084 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:16,167 - INFO - tqdm - never_P: 0.2222, never_R: 0.2609, never_F1: 0.2400, always_P: 0.4182, always_R: 0.5750, always_F1: 0.4842, usually_P: 0.4000, usually_R: 0.3333, usually_F1: 0.3636, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0989, accuracy: 0.3458, batch_loss: 1.5964, loss: 1.9025 ||: 100%|##########| 11/11 [00:00<00:00, 132.61it/s]
+2021-05-03 17:16:16,174 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:16,174 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.681  |     0.346
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.670  |     0.484
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.629  |     0.418
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.716  |     0.575
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.609  |     0.099
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.353  |     0.000
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     1.000  |     0.000
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.214  |     0.000
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.500  |     0.000
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:16,175 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.333  |     0.000
+2021-05-03 17:16:16,176 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.951  |     1.903
+2021-05-03 17:16:16,176 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.510  |     0.000
+2021-05-03 17:16:16,176 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.929  |     0.000
+2021-05-03 17:16:16,176 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.351  |     0.000
+2021-05-03 17:16:16,176 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.767  |     0.240
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.693  |     0.222
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.859  |     0.261
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.632  |     0.000
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.462  |     0.000
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.660  |     0.000
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.750  |     0.000
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.589  |     0.000
+2021-05-03 17:16:16,177 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.714  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.556  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.539  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.658  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.457  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     0.909  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     0.833  |     0.000
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.443  |     0.364
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.681  |     0.400
+2021-05-03 17:16:16,178 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.329  |     0.333
+2021-05-03 17:16:16,179 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.711  |       N/A
+2021-05-03 17:16:16,179 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.211181
+2021-05-03 17:16:16,179 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:40
+2021-05-03 17:16:16,179 - INFO - allennlp.training.trainer - Epoch 4/39
+2021-05-03 17:16:16,179 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:16,179 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:16,179 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:17,255 - INFO - tqdm - never_P: 0.7653, never_R: 0.8801, never_F1: 0.8187, always_P: 0.7479, always_R: 0.8228, always_F1: 0.7836, usually_P: 0.6207, usually_R: 0.4832, usually_F1: 0.5434, often_P: 0.7865, often_R: 0.6250, often_F1: 0.6965, sometimes_P: 0.7500, sometimes_R: 0.4571, sometimes_F1: 0.5680, mostly_P: 0.9259, mostly_R: 0.6757, mostly_F1: 0.7812, frequently_P: 0.8000, frequently_R: 0.5714, frequently_F1: 0.6667, generally_P: 0.9333, generally_R: 0.5833, generally_F1: 0.7179, occasionally_P: 1.0000, occasionally_R: 0.6154, occasionally_F1: 0.7619, seldom_P: 1.0000, seldom_R: 0.6667, seldom_F1: 0.8000, universally_P: 1.0000, universally_R: 1.0000, universally_F1: 1.0000, average_F1: 0.7398, accuracy: 0.7570, batch_loss: 0.4036, loss: 0.7574 ||: 100%|##########| 147/147 [00:01<00:00, 136.75it/s]
+2021-05-03 17:16:17,258 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:17,258 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:17,320 - INFO - tqdm - never_P: 0.1795, never_R: 0.3043, never_F1: 0.2258, always_P: 0.4151, always_R: 0.5500, always_F1: 0.4731, usually_P: 0.5000, usually_R: 0.1667, usually_F1: 0.2500, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0863, accuracy: 0.3084, batch_loss: 1.7442, loss: 2.1398 ||: 100%|##########| 11/11 [00:00<00:00, 179.93it/s]
+2021-05-03 17:16:17,324 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.757  |     0.308
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.784  |     0.473
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.748  |     0.415
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.823  |     0.550
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.740  |     0.086
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.667  |     0.000
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     0.800  |     0.000
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.571  |     0.000
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.718  |     0.000
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     0.933  |     0.000
+2021-05-03 17:16:17,325 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.583  |     0.000
+2021-05-03 17:16:17,327 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.757  |     2.140
+2021-05-03 17:16:17,327 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.781  |     0.000
+2021-05-03 17:16:17,327 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.926  |     0.000
+2021-05-03 17:16:17,327 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.676  |     0.000
+2021-05-03 17:16:17,327 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.819  |     0.226
+2021-05-03 17:16:17,327 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.765  |     0.179
+2021-05-03 17:16:17,327 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.880  |     0.304
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.762  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.615  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.697  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.787  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.625  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.800  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.667  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.568  |     0.000
+2021-05-03 17:16:17,328 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.750  |     0.000
+2021-05-03 17:16:17,329 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.457  |     0.000
+2021-05-03 17:16:17,329 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     1.000  |     0.000
+2021-05-03 17:16:17,329 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:17,329 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     1.000  |     0.000
+2021-05-03 17:16:17,329 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.543  |     0.250
+2021-05-03 17:16:17,329 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.621  |     0.500
+2021-05-03 17:16:17,329 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.483  |     0.167
+2021-05-03 17:16:17,329 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.789  |       N/A
+2021-05-03 17:16:17,329 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.150351
+2021-05-03 17:16:17,329 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:39
+2021-05-03 17:16:17,329 - INFO - allennlp.training.trainer - Epoch 5/39
+2021-05-03 17:16:17,329 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:17,330 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:17,330 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:18,507 - INFO - tqdm - never_P: 0.8268, never_R: 0.9259, never_F1: 0.8735, always_P: 0.7922, always_R: 0.8531, always_F1: 0.8215, usually_P: 0.7167, usually_R: 0.5772, usually_F1: 0.6394, often_P: 0.8438, often_R: 0.7232, often_F1: 0.7788, sometimes_P: 0.7838, sometimes_R: 0.5524, sometimes_F1: 0.6480, mostly_P: 0.9655, mostly_R: 0.7568, mostly_F1: 0.8485, frequently_P: 1.0000, frequently_R: 0.6429, frequently_F1: 0.7826, generally_P: 1.0000, generally_R: 0.7500, generally_F1: 0.8571, occasionally_P: 1.0000, occasionally_R: 0.6923, occasionally_F1: 0.8182, seldom_P: 1.0000, seldom_R: 0.7778, seldom_F1: 0.8750, universally_P: 1.0000, universally_R: 1.0000, universally_F1: 1.0000, average_F1: 0.8130, accuracy: 0.8143, batch_loss: 0.6825, loss: 0.5802 ||: 100%|##########| 147/147 [00:01<00:00, 124.94it/s]
+2021-05-03 17:16:18,511 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:18,511 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:18,577 - INFO - tqdm - never_P: 0.1892, never_R: 0.3043, never_F1: 0.2333, always_P: 0.4286, always_R: 0.4500, always_F1: 0.4390, usually_P: 0.4500, usually_R: 0.3750, usually_F1: 0.4091, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0983, accuracy: 0.3178, batch_loss: 2.3864, loss: 2.1710 ||: 100%|##########| 11/11 [00:00<00:00, 169.11it/s]
+2021-05-03 17:16:18,584 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:18,584 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.814  |     0.318
+2021-05-03 17:16:18,584 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.822  |     0.439
+2021-05-03 17:16:18,585 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.792  |     0.429
+2021-05-03 17:16:18,585 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.853  |     0.450
+2021-05-03 17:16:18,585 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.813  |     0.098
+2021-05-03 17:16:18,585 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.783  |     0.000
+2021-05-03 17:16:18,585 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     1.000  |     0.000
+2021-05-03 17:16:18,585 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.643  |     0.000
+2021-05-03 17:16:18,585 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.857  |     0.000
+2021-05-03 17:16:18,586 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:18,586 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.750  |     0.000
+2021-05-03 17:16:18,586 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.580  |     2.171
+2021-05-03 17:16:18,586 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.848  |     0.000
+2021-05-03 17:16:18,586 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.966  |     0.000
+2021-05-03 17:16:18,586 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.757  |     0.000
+2021-05-03 17:16:18,586 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.874  |     0.233
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.827  |     0.189
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.926  |     0.304
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.818  |     0.000
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.692  |     0.000
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.779  |     0.000
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.844  |     0.000
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.723  |     0.000
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.875  |     0.000
+2021-05-03 17:16:18,587 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.778  |     0.000
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.648  |     0.000
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.784  |     0.000
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.552  |     0.000
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     1.000  |     0.000
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     1.000  |     0.000
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.639  |     0.409
+2021-05-03 17:16:18,588 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.717  |     0.450
+2021-05-03 17:16:18,589 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.577  |     0.375
+2021-05-03 17:16:18,589 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.789  |       N/A
+2021-05-03 17:16:18,589 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.259429
+2021-05-03 17:16:18,589 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:39
+2021-05-03 17:16:18,589 - INFO - allennlp.training.trainer - Epoch 6/39
+2021-05-03 17:16:18,589 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:18,589 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:18,590 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:19,682 - INFO - tqdm - never_P: 0.8703, never_R: 0.9471, never_F1: 0.9071, always_P: 0.8636, always_R: 0.8858, always_F1: 0.8746, usually_P: 0.8306, usually_R: 0.6913, usually_F1: 0.7546, often_P: 0.8889, often_R: 0.7857, often_F1: 0.8341, sometimes_P: 0.8247, sometimes_R: 0.7619, sometimes_F1: 0.7921, mostly_P: 0.9429, mostly_R: 0.8919, mostly_F1: 0.9167, frequently_P: 1.0000, frequently_R: 0.7143, frequently_F1: 0.8333, generally_P: 1.0000, generally_R: 0.7917, generally_F1: 0.8837, occasionally_P: 1.0000, occasionally_R: 0.7692, occasionally_F1: 0.8696, seldom_P: 1.0000, seldom_R: 0.8889, seldom_F1: 0.9412, universally_P: 1.0000, universally_R: 1.0000, universally_F1: 1.0000, average_F1: 0.8734, accuracy: 0.8696, batch_loss: 0.2049, loss: 0.4418 ||: 100%|##########| 147/147 [00:01<00:00, 134.63it/s]
+2021-05-03 17:16:19,689 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:19,689 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:19,760 - INFO - tqdm - never_P: 0.1667, never_R: 0.1739, never_F1: 0.1702, always_P: 0.3922, always_R: 0.5000, always_F1: 0.4396, usually_P: 0.4167, usually_R: 0.4167, usually_F1: 0.4167, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0933, accuracy: 0.3178, batch_loss: 2.3549, loss: 2.3124 ||: 100%|##########| 11/11 [00:00<00:00, 156.17it/s]
+2021-05-03 17:16:19,767 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:19,767 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.870  |     0.318
+2021-05-03 17:16:19,767 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.875  |     0.440
+2021-05-03 17:16:19,767 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.864  |     0.392
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.886  |     0.500
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.873  |     0.093
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.833  |     0.000
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     1.000  |     0.000
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.714  |     0.000
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.884  |     0.000
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.792  |     0.000
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.442  |     2.312
+2021-05-03 17:16:19,768 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.917  |     0.000
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.943  |     0.000
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.892  |     0.000
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.907  |     0.170
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.870  |     0.167
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.947  |     0.174
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.870  |     0.000
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.769  |     0.000
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.834  |     0.000
+2021-05-03 17:16:19,788 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.889  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.786  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.941  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.889  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.792  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.825  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.762  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     1.000  |     0.000
+2021-05-03 17:16:19,789 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:19,790 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     1.000  |     0.000
+2021-05-03 17:16:19,790 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.755  |     0.417
+2021-05-03 17:16:19,790 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.831  |     0.417
+2021-05-03 17:16:19,790 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.691  |     0.417
+2021-05-03 17:16:19,790 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.789  |       N/A
+2021-05-03 17:16:19,791 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.201634
+2021-05-03 17:16:19,791 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:38
+2021-05-03 17:16:19,791 - INFO - allennlp.training.trainer - Epoch 7/39
+2021-05-03 17:16:19,791 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:19,792 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:19,792 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:20,828 - INFO - tqdm - never_P: 0.9143, never_R: 0.9594, never_F1: 0.9363, always_P: 0.8869, always_R: 0.9324, always_F1: 0.9091, usually_P: 0.8897, usually_R: 0.8121, usually_F1: 0.8491, often_P: 0.9208, often_R: 0.8304, often_F1: 0.8732, sometimes_P: 0.9121, sometimes_R: 0.7905, sometimes_F1: 0.8469, mostly_P: 0.9459, mostly_R: 0.9459, mostly_F1: 0.9459, frequently_P: 1.0000, frequently_R: 0.7857, frequently_F1: 0.8800, generally_P: 1.0000, generally_R: 0.7917, generally_F1: 0.8837, occasionally_P: 1.0000, occasionally_R: 0.7692, occasionally_F1: 0.8696, seldom_P: 1.0000, seldom_R: 0.8889, seldom_F1: 0.9412, universally_P: 1.0000, universally_R: 1.0000, universally_F1: 1.0000, average_F1: 0.9032, accuracy: 0.9078, batch_loss: 0.3875, loss: 0.3372 ||: 100%|##########| 147/147 [00:01<00:00, 141.96it/s]
+2021-05-03 17:16:20,831 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:20,832 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:20,892 - INFO - tqdm - never_P: 0.1600, never_R: 0.1739, never_F1: 0.1667, always_P: 0.4167, always_R: 0.3750, always_F1: 0.3947, usually_P: 0.3636, usually_R: 0.5000, usually_F1: 0.4211, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0893, accuracy: 0.2897, batch_loss: 1.9458, loss: 2.3875 ||: 100%|##########| 11/11 [00:00<00:00, 184.17it/s]
+2021-05-03 17:16:20,896 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:20,896 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.908  |     0.290
+2021-05-03 17:16:20,896 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.909  |     0.395
+2021-05-03 17:16:20,896 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.887  |     0.417
+2021-05-03 17:16:20,896 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.932  |     0.375
+2021-05-03 17:16:20,896 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.903  |     0.089
+2021-05-03 17:16:20,896 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.880  |     0.000
+2021-05-03 17:16:20,896 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     1.000  |     0.000
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.786  |     0.000
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.884  |     0.000
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.792  |     0.000
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.337  |     2.387
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.946  |     0.000
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.946  |     0.000
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.946  |     0.000
+2021-05-03 17:16:20,897 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.936  |     0.167
+2021-05-03 17:16:20,898 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.914  |     0.160
+2021-05-03 17:16:20,898 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.959  |     0.174
+2021-05-03 17:16:20,898 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.870  |     0.000
+2021-05-03 17:16:20,898 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:20,898 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.769  |     0.000
+2021-05-03 17:16:20,898 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.873  |     0.000
+2021-05-03 17:16:20,917 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.921  |     0.000
+2021-05-03 17:16:20,917 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.830  |     0.000
+2021-05-03 17:16:20,917 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.941  |     0.000
+2021-05-03 17:16:20,918 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:20,918 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.889  |     0.000
+2021-05-03 17:16:20,918 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.847  |     0.000
+2021-05-03 17:16:20,918 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.912  |     0.000
+2021-05-03 17:16:20,918 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.790  |     0.000
+2021-05-03 17:16:20,919 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     1.000  |     0.000
+2021-05-03 17:16:20,919 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:20,919 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     1.000  |     0.000
+2021-05-03 17:16:20,919 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.849  |     0.421
+2021-05-03 17:16:20,919 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.890  |     0.364
+2021-05-03 17:16:20,919 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.812  |     0.500
+2021-05-03 17:16:20,919 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.801  |       N/A
+2021-05-03 17:16:20,920 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.128583
+2021-05-03 17:16:20,920 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:37
+2021-05-03 17:16:20,920 - INFO - allennlp.training.trainer - Epoch 8/39
+2021-05-03 17:16:20,920 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:20,920 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:20,921 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:22,041 - INFO - tqdm - never_P: 0.9470, never_R: 0.9771, never_F1: 0.9618, always_P: 0.9424, always_R: 0.9534, always_F1: 0.9479, usually_P: 0.9065, usually_R: 0.8456, usually_F1: 0.8750, often_P: 0.9279, often_R: 0.9196, often_F1: 0.9238, sometimes_P: 0.9490, sometimes_R: 0.8857, sometimes_F1: 0.9163, mostly_P: 0.9737, mostly_R: 1.0000, mostly_F1: 0.9867, frequently_P: 1.0000, frequently_R: 0.7857, frequently_F1: 0.8800, generally_P: 1.0000, generally_R: 0.9583, generally_F1: 0.9787, occasionally_P: 1.0000, occasionally_R: 0.9231, occasionally_F1: 0.9600, seldom_P: 1.0000, seldom_R: 0.8889, seldom_F1: 0.9412, universally_P: 1.0000, universally_R: 1.0000, universally_F1: 1.0000, average_F1: 0.9428, accuracy: 0.9433, batch_loss: 0.2110, loss: 0.2688 ||: 100%|##########| 147/147 [00:01<00:00, 131.27it/s]
+2021-05-03 17:16:22,044 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:22,044 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:22,107 - INFO - tqdm - never_P: 0.1923, never_R: 0.2174, never_F1: 0.2041, always_P: 0.4082, always_R: 0.5000, always_F1: 0.4494, usually_P: 0.3500, usually_R: 0.2917, usually_F1: 0.3182, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.1250, sometimes_R: 0.2000, sometimes_F1: 0.1538, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.1023, accuracy: 0.3084, batch_loss: 1.7142, loss: 2.4940 ||: 100%|##########| 11/11 [00:00<00:00, 175.98it/s]
+2021-05-03 17:16:22,112 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:22,112 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.943  |     0.308
+2021-05-03 17:16:22,112 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.948  |     0.449
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.942  |     0.408
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.953  |     0.500
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.943  |     0.102
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.880  |     0.000
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     1.000  |     0.000
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.786  |     0.000
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.979  |     0.000
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.958  |     0.000
+2021-05-03 17:16:22,113 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.269  |     2.494
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.987  |     0.000
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.974  |     0.000
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     1.000  |     0.000
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.962  |     0.204
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.947  |     0.192
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.977  |     0.217
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     0.960  |     0.000
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     0.923  |     0.000
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.924  |     0.000
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.928  |     0.000
+2021-05-03 17:16:22,114 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.920  |     0.000
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.941  |     0.000
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.889  |     0.000
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.916  |     0.154
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.949  |     0.125
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.886  |     0.200
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     1.000  |     0.000
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     1.000  |     0.000
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.875  |     0.318
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.906  |     0.350
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.846  |     0.292
+2021-05-03 17:16:22,115 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.883  |       N/A
+2021-05-03 17:16:22,115 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.195635
+2021-05-03 17:16:22,116 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:36
+2021-05-03 17:16:22,116 - INFO - allennlp.training.trainer - Epoch 9/39
+2021-05-03 17:16:22,116 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:22,116 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:22,116 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:23,118 - INFO - tqdm - never_P: 0.9516, never_R: 0.9700, never_F1: 0.9607, always_P: 0.9470, always_R: 0.9580, always_F1: 0.9525, usually_P: 0.9252, usually_R: 0.9128, usually_F1: 0.9189, often_P: 0.9537, often_R: 0.9196, often_F1: 0.9364, sometimes_P: 0.9495, sometimes_R: 0.8952, sometimes_F1: 0.9216, mostly_P: 0.9737, mostly_R: 1.0000, mostly_F1: 0.9867, frequently_P: 1.0000, frequently_R: 0.8571, frequently_F1: 0.9231, generally_P: 1.0000, generally_R: 0.9167, generally_F1: 0.9565, occasionally_P: 1.0000, occasionally_R: 1.0000, occasionally_F1: 1.0000, seldom_P: 1.0000, seldom_R: 0.8889, seldom_F1: 0.9412, universally_P: 1.0000, universally_R: 1.0000, universally_F1: 1.0000, average_F1: 0.9543, accuracy: 0.9502, batch_loss: 0.4940, loss: 0.2110 ||: 100%|##########| 147/147 [00:01<00:00, 146.87it/s]
+2021-05-03 17:16:23,122 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:23,122 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:23,180 - INFO - tqdm - never_P: 0.1818, never_R: 0.2609, never_F1: 0.2143, always_P: 0.4222, always_R: 0.4750, always_F1: 0.4471, usually_P: 0.4444, usually_R: 0.3333, usually_F1: 0.3810, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0948, accuracy: 0.3084, batch_loss: 2.0579, loss: 2.6113 ||: 100%|##########| 11/11 [00:00<00:00, 192.36it/s]
+2021-05-03 17:16:23,185 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:23,185 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.950  |     0.308
+2021-05-03 17:16:23,185 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.952  |     0.447
+2021-05-03 17:16:23,185 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.947  |     0.422
+2021-05-03 17:16:23,185 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.958  |     0.475
+2021-05-03 17:16:23,186 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.954  |     0.095
+2021-05-03 17:16:23,186 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     0.923  |     0.000
+2021-05-03 17:16:23,186 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     1.000  |     0.000
+2021-05-03 17:16:23,186 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     0.857  |     0.000
+2021-05-03 17:16:23,186 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.957  |     0.000
+2021-05-03 17:16:23,186 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:23,186 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.917  |     0.000
+2021-05-03 17:16:23,186 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.211  |     2.611
+2021-05-03 17:16:23,187 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.987  |     0.000
+2021-05-03 17:16:23,187 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.974  |     0.000
+2021-05-03 17:16:23,187 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     1.000  |     0.000
+2021-05-03 17:16:23,187 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.961  |     0.214
+2021-05-03 17:16:23,187 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.952  |     0.182
+2021-05-03 17:16:23,187 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.970  |     0.261
+2021-05-03 17:16:23,187 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     1.000  |     0.000
+2021-05-03 17:16:23,187 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:23,188 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     1.000  |     0.000
+2021-05-03 17:16:23,188 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.936  |     0.000
+2021-05-03 17:16:23,188 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.954  |     0.000
+2021-05-03 17:16:23,188 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.920  |     0.000
+2021-05-03 17:16:23,188 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     0.941  |     0.000
+2021-05-03 17:16:23,188 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:23,188 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     0.889  |     0.000
+2021-05-03 17:16:23,189 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.922  |     0.000
+2021-05-03 17:16:23,189 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.949  |     0.000
+2021-05-03 17:16:23,189 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.895  |     0.000
+2021-05-03 17:16:23,189 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     1.000  |     0.000
+2021-05-03 17:16:23,189 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:23,189 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     1.000  |     0.000
+2021-05-03 17:16:23,189 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.919  |     0.381
+2021-05-03 17:16:23,189 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.925  |     0.444
+2021-05-03 17:16:23,190 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.913  |     0.333
+2021-05-03 17:16:23,190 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.883  |       N/A
+2021-05-03 17:16:23,190 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.074068
+2021-05-03 17:16:23,190 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:34
+2021-05-03 17:16:23,190 - INFO - allennlp.training.trainer - Epoch 10/39
+2021-05-03 17:16:23,190 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:23,190 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:23,190 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:24,273 - INFO - tqdm - never_P: 0.9635, never_R: 0.9788, never_F1: 0.9711, always_P: 0.9651, always_R: 0.9674, always_F1: 0.9662, usually_P: 0.9577, usually_R: 0.9128, usually_F1: 0.9347, often_P: 0.9369, often_R: 0.9286, often_F1: 0.9327, sometimes_P: 0.9519, sometimes_R: 0.9429, sometimes_F1: 0.9474, mostly_P: 0.9730, mostly_R: 0.9730, mostly_F1: 0.9730, frequently_P: 1.0000, frequently_R: 1.0000, frequently_F1: 1.0000, generally_P: 1.0000, generally_R: 0.9583, generally_F1: 0.9787, occasionally_P: 1.0000, occasionally_R: 1.0000, occasionally_F1: 1.0000, seldom_P: 1.0000, seldom_R: 1.0000, seldom_F1: 1.0000, universally_P: 1.0000, universally_R: 1.0000, universally_F1: 1.0000, average_F1: 0.9731, accuracy: 0.9625, batch_loss: 0.2604, loss: 0.1677 ||: 100%|##########| 147/147 [00:01<00:00, 135.84it/s]
+2021-05-03 17:16:24,278 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:24,279 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:24,360 - INFO - tqdm - never_P: 0.2143, never_R: 0.1304, never_F1: 0.1622, always_P: 0.4035, always_R: 0.5750, always_F1: 0.4742, usually_P: 0.4000, usually_R: 0.4167, usually_F1: 0.4082, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0950, accuracy: 0.3364, batch_loss: 2.7110, loss: 2.6142 ||: 100%|##########| 11/11 [00:00<00:00, 135.38it/s]
+2021-05-03 17:16:24,365 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:24,365 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.962  |     0.336
+2021-05-03 17:16:24,366 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.966  |     0.474
+2021-05-03 17:16:24,366 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.965  |     0.404
+2021-05-03 17:16:24,366 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.967  |     0.575
+2021-05-03 17:16:24,366 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.973  |     0.095
+2021-05-03 17:16:24,366 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     1.000  |     0.000
+2021-05-03 17:16:24,366 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     1.000  |     0.000
+2021-05-03 17:16:24,366 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     1.000  |     0.000
+2021-05-03 17:16:24,366 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.979  |     0.000
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.958  |     0.000
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.168  |     2.614
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.973  |     0.000
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.973  |     0.000
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     0.973  |     0.000
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.971  |     0.162
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.964  |     0.214
+2021-05-03 17:16:24,367 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.979  |     0.130
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     1.000  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     1.000  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.933  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.937  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.929  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     1.000  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     1.000  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.947  |     0.000
+2021-05-03 17:16:24,392 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.952  |     0.000
+2021-05-03 17:16:24,393 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.943  |     0.000
+2021-05-03 17:16:24,393 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     1.000  |     0.000
+2021-05-03 17:16:24,393 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:24,393 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     1.000  |     0.000
+2021-05-03 17:16:24,393 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.935  |     0.408
+2021-05-03 17:16:24,393 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.958  |     0.400
+2021-05-03 17:16:24,393 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.913  |     0.417
+2021-05-03 17:16:24,393 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.961  |       N/A
+2021-05-03 17:16:24,394 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.203527
+2021-05-03 17:16:24,394 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:33
+2021-05-03 17:16:24,394 - INFO - allennlp.training.trainer - Epoch 11/39
+2021-05-03 17:16:24,394 - INFO - allennlp.training.trainer - Worker 0 memory usage: 256M
+2021-05-03 17:16:24,394 - INFO - allennlp.training.trainer - Training
+2021-05-03 17:16:24,395 - INFO - tqdm - 0%|          | 0/147 [00:00<?, ?it/s]
+2021-05-03 17:16:25,487 - INFO - tqdm - never_P: 0.9735, never_R: 0.9735, never_F1: 0.9735, always_P: 0.9768, always_R: 0.9814, always_F1: 0.9791, usually_P: 0.9272, usually_R: 0.9396, usually_F1: 0.9333, often_P: 0.9545, often_R: 0.9375, often_F1: 0.9459, sometimes_P: 0.9709, sometimes_R: 0.9524, sometimes_F1: 0.9615, mostly_P: 0.9737, mostly_R: 1.0000, mostly_F1: 0.9867, frequently_P: 1.0000, frequently_R: 1.0000, frequently_F1: 1.0000, generally_P: 1.0000, generally_R: 0.9583, generally_F1: 0.9787, occasionally_P: 1.0000, occasionally_R: 1.0000, occasionally_F1: 1.0000, seldom_P: 1.0000, seldom_R: 1.0000, seldom_F1: 1.0000, universally_P: 1.0000, universally_R: 1.0000, universally_F1: 1.0000, average_F1: 0.9781, accuracy: 0.9693, batch_loss: 0.1501, loss: 0.1409 ||: 100%|##########| 147/147 [00:01<00:00, 134.69it/s]
+2021-05-03 17:16:25,490 - INFO - allennlp.training.trainer - Validating
+2021-05-03 17:16:25,491 - INFO - tqdm - 0%|          | 0/11 [00:00<?, ?it/s]
+2021-05-03 17:16:25,554 - INFO - tqdm - never_P: 0.1333, never_R: 0.1739, never_F1: 0.1509, always_P: 0.4048, always_R: 0.4250, always_F1: 0.4146, usually_P: 0.3750, usually_R: 0.3750, usually_F1: 0.3750, often_P: 0.0000, often_R: 0.0000, often_F1: 0.0000, sometimes_P: 0.0000, sometimes_R: 0.0000, sometimes_F1: 0.0000, mostly_P: 0.0000, mostly_R: 0.0000, mostly_F1: 0.0000, frequently_P: 0.0000, frequently_R: 0.0000, frequently_F1: 0.0000, generally_P: 0.0000, generally_R: 0.0000, generally_F1: 0.0000, occasionally_P: 0.0000, occasionally_R: 0.0000, occasionally_F1: 0.0000, seldom_P: 0.0000, seldom_R: 0.0000, seldom_F1: 0.0000, universally_P: 0.0000, universally_R: 0.0000, universally_F1: 0.0000, average_F1: 0.0855, accuracy: 0.2804, batch_loss: 3.0770, loss: 2.7881 ||: 100%|##########| 11/11 [00:00<00:00, 176.81it/s]
+2021-05-03 17:16:25,560 - INFO - allennlp.training.callbacks.console_logger -                        Training |  Validation
+2021-05-03 17:16:25,560 - INFO - allennlp.training.callbacks.console_logger - accuracy           |     0.969  |     0.280
+2021-05-03 17:16:25,560 - INFO - allennlp.training.callbacks.console_logger - always_F1          |     0.979  |     0.415
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - always_P           |     0.977  |     0.405
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - always_R           |     0.981  |     0.425
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - average_F1         |     0.978  |     0.086
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - frequently_F1      |     1.000  |     0.000
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - frequently_P       |     1.000  |     0.000
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - frequently_R       |     1.000  |     0.000
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - generally_F1       |     0.979  |     0.000
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - generally_P        |     1.000  |     0.000
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - generally_R        |     0.958  |     0.000
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - loss               |     0.141  |     2.788
+2021-05-03 17:16:25,561 - INFO - allennlp.training.callbacks.console_logger - mostly_F1          |     0.987  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - mostly_P           |     0.974  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - mostly_R           |     1.000  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - never_F1           |     0.974  |     0.151
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - never_P            |     0.974  |     0.133
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - never_R            |     0.974  |     0.174
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - occasionally_F1    |     1.000  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - occasionally_P     |     1.000  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - occasionally_R     |     1.000  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - often_F1           |     0.946  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - often_P            |     0.955  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - often_R            |     0.938  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - seldom_F1          |     1.000  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - seldom_P           |     1.000  |     0.000
+2021-05-03 17:16:25,562 - INFO - allennlp.training.callbacks.console_logger - seldom_R           |     1.000  |     0.000
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - sometimes_F1       |     0.962  |     0.000
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - sometimes_P        |     0.971  |     0.000
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - sometimes_R        |     0.952  |     0.000
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - universally_F1     |     1.000  |     0.000
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - universally_P      |     1.000  |     0.000
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - universally_R      |     1.000  |     0.000
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - usually_F1         |     0.933  |     0.375
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - usually_P          |     0.927  |     0.375
+2021-05-03 17:16:25,563 - INFO - allennlp.training.callbacks.console_logger - usually_R          |     0.940  |     0.375
+2021-05-03 17:16:25,564 - INFO - allennlp.training.callbacks.console_logger - worker_0_memory_MB |   255.961  |       N/A
+2021-05-03 17:16:25,564 - INFO - allennlp.training.trainer - Epoch duration: 0:00:01.169964
+2021-05-03 17:16:25,564 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:00:32
+2021-05-03 17:16:25,564 - INFO - allennlp.training.trainer - Ran out of patience. Stopping training.
+2021-05-03 17:16:25,564 - INFO - allennlp.training.checkpointer - loading best weights
+2021-05-03 17:16:25,565 - INFO - allennlp.commands.train - To evaluate on the test set after training, pass the 'evaluate_on_test' flag, or use the 'allennlp evaluate' command.
+2021-05-03 17:16:25,566 - INFO - allennlp.common.util - Metrics: {
+  "best_epoch": 1,
+  "peak_worker_0_memory_MB": 255.9609375,
+  "training_duration": "0:00:13.924462",
+  "training_start_epoch": 0,
+  "training_epochs": 11,
+  "epoch": 11,
+  "training_never_P": 0.9735449552536011,
+  "training_never_R": 0.9735449552536011,
+  "training_never_F1": 0.9735449552536011,
+  "training_always_P": 0.9767981171607971,
+  "training_always_R": 0.9813519716262817,
+  "training_always_F1": 0.979069709777832,
+  "training_usually_P": 0.9271523356437683,
+  "training_usually_R": 0.9395973086357117,
+  "training_usually_F1": 0.9333333373069763,
+  "training_often_P": 0.9545454382896423,
+  "training_often_R": 0.9375,
+  "training_often_F1": 0.9459459185600281,
+  "training_sometimes_P": 0.9708737730979919,
+  "training_sometimes_R": 0.9523809552192688,
+  "training_sometimes_F1": 0.9615384340286255,
+  "training_mostly_P": 0.9736841917037964,
+  "training_mostly_R": 1.0,
+  "training_mostly_F1": 0.9866666793823242,
+  "training_frequently_P": 1.0,
+  "training_frequently_R": 1.0,
+  "training_frequently_F1": 1.0,
+  "training_generally_P": 1.0,
+  "training_generally_R": 0.9583333134651184,
+  "training_generally_F1": 0.978723406791687,
+  "training_occasionally_P": 1.0,
+  "training_occasionally_R": 1.0,
+  "training_occasionally_F1": 1.0,
+  "training_seldom_P": 1.0,
+  "training_seldom_R": 1.0,
+  "training_seldom_F1": 1.0,
+  "training_universally_P": 1.0,
+  "training_universally_R": 1.0,
+  "training_universally_F1": 1.0,
+  "training_average_F1": 0.978074767372825,
+  "training_accuracy": 0.9692832764505119,
+  "training_loss": 0.14087037332229266,
+  "training_worker_0_memory_MB": 255.9609375,
+  "validation_never_P": 0.13333334028720856,
+  "validation_never_R": 0.17391304671764374,
+  "validation_never_F1": 0.15094339847564697,
+  "validation_always_P": 0.4047619104385376,
+  "validation_always_R": 0.42500001192092896,
+  "validation_always_F1": 0.41463416814804077,
+  "validation_usually_P": 0.375,
+  "validation_usually_R": 0.375,
+  "validation_usually_F1": 0.375,
+  "validation_often_P": 0.0,
+  "validation_often_R": 0.0,
+  "validation_often_F1": 0.0,
+  "validation_sometimes_P": 0.0,
+  "validation_sometimes_R": 0.0,
+  "validation_sometimes_F1": 0.0,
+  "validation_mostly_P": 0.0,
+  "validation_mostly_R": 0.0,
+  "validation_mostly_F1": 0.0,
+  "validation_frequently_P": 0.0,
+  "validation_frequently_R": 0.0,
+  "validation_frequently_F1": 0.0,
+  "validation_generally_P": 0.0,
+  "validation_generally_R": 0.0,
+  "validation_generally_F1": 0.0,
+  "validation_occasionally_P": 0.0,
+  "validation_occasionally_R": 0.0,
+  "validation_occasionally_F1": 0.0,
+  "validation_seldom_P": 0.0,
+  "validation_seldom_R": 0.0,
+  "validation_seldom_F1": 0.0,
+  "validation_universally_P": 0.0,
+  "validation_universally_R": 0.0,
+  "validation_universally_F1": 0.0,
+  "validation_average_F1": 0.08550705151124434,
+  "validation_accuracy": 0.2803738317757009,
+  "validation_loss": 2.7880678231065925,
+  "best_validation_never_P": 0.20000000298023224,
+  "best_validation_never_R": 0.260869562625885,
+  "best_validation_never_F1": 0.22641509771347046,
+  "best_validation_always_P": 0.3947368562221527,
+  "best_validation_always_R": 0.75,
+  "best_validation_always_F1": 0.517241358757019,
+  "best_validation_usually_P": 0.0,
+  "best_validation_usually_R": 0.0,
+  "best_validation_usually_F1": 0.0,
+  "best_validation_often_P": 0.0,
+  "best_validation_often_R": 0.0,
+  "best_validation_often_F1": 0.0,
+  "best_validation_sometimes_P": 0.0,
+  "best_validation_sometimes_R": 0.0,
+  "best_validation_sometimes_F1": 0.0,
+  "best_validation_mostly_P": 0.0,
+  "best_validation_mostly_R": 0.0,
+  "best_validation_mostly_F1": 0.0,
+  "best_validation_frequently_P": 0.0,
+  "best_validation_frequently_R": 0.0,
+  "best_validation_frequently_F1": 0.0,
+  "best_validation_generally_P": 0.0,
+  "best_validation_generally_R": 0.0,
+  "best_validation_generally_F1": 0.0,
+  "best_validation_occasionally_P": 0.0,
+  "best_validation_occasionally_R": 0.0,
+  "best_validation_occasionally_F1": 0.0,
+  "best_validation_seldom_P": 0.0,
+  "best_validation_seldom_R": 0.0,
+  "best_validation_seldom_F1": 0.0,
+  "best_validation_universally_P": 0.0,
+  "best_validation_universally_R": 0.0,
+  "best_validation_universally_F1": 0.0,
+  "best_validation_average_F1": 0.06760513240640814,
+  "best_validation_accuracy": 0.3364485981308411,
+  "best_validation_loss": 1.7743471969257703
+}
+2021-05-03 17:16:25,567 - INFO - allennlp.models.archival - archiving weights and vocabulary to data/quantonly-model/model.tar.gz

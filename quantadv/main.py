@@ -7,9 +7,7 @@ from allennlp.data import (
     Vocabulary,
 )
 from allennlp.models import Model
-
 from allennlp.modules.seq2vec_encoders import BagOfEmbeddingsEncoder
-
 from allennlp.data.data_loaders import SimpleDataLoader
 from allennlp.modules.token_embedders import Embedding
 from allennlp.modules.text_field_embedders import BasicTextFieldEmbedder
@@ -17,7 +15,7 @@ from allennlp.training.trainer import GradientDescentTrainer, Trainer
 from allennlp.training.optimizers import AdamOptimizer
 from allennlp.training.util import evaluate
 
-from quantadv.readers.reader import Reader
+from quantadv.readers.reader import UDSTimeReader
 from quantadv.models.model import SimpleClassifierModel
 
 
@@ -66,7 +64,7 @@ def train_and_test_model():
         test_file, serialization_dir
     ) = data_files()
 
-    reader = Reader()
+    reader = UDSTimeReader()
 
     train_data = list(reader.read(train_file))
     dev_data = list(reader.read(dev_file))
